@@ -1,0 +1,104 @@
+body{
+    font: 12px/1.5 Microsoft YaHei;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.outer{
+    min-width: 1190px;
+    height: 30px;
+    border-bottom: 1px solid ddd;
+    background-color: #e3e4e5;
+    border-bottom: #ccc solid 1px;
+}
+.menu{
+    width: 1190px;
+    
+    margin: 0 auto;
+    line-height: 30px;
+    color: #999;
+}
+.city{
+    float: left;
+    
+}
+
+/* 更改图标颜色 大小样式*/
+.city i{
+color: #f10215;
+font-size: 14px;
+}
+/* 
+向着 */
+.user-info{
+    float: right;
+}
+.user-info>li,.user-info .line{
+float: left;
+}
+.user-info>li{
+    padding: 0 7px;
+}
+.user-info>li>div:hover,
+.user-info>li>a:hover{
+    color: #f10215;
+}
+.current{
+    cursor: pointer;
+    padding: 0 7px;
+    position: relative;
+    border: 1px solid transparent;
+    border-bottom: none;
+}
+.current span:hover{
+color: #f10215;
+}
+.line{
+    height: 10px;
+    margin-top: 10px;
+    border-left: 1px #999 solid;
+}
+.hot{
+    color: #f10215;
+}
+.Area{
+    width:250px;
+    height: 0px;
+    background-color:white;
+    overflow: hidden;
+    position: absolute;
+   
+   
+   
+}
+.city:hover .current{
+    background-color:white;
+    border: solid #ccc 1px;
+    border-bottom: none;
+
+}
+.city:hover .Area{
+    border-left:#ccc solid 1px ;
+    border-bottom:#ccc solid 1px ;
+    border-right:#ccc solid 1px ;
+    height: 300px;
+    transition:  500ms;
+}
+.Area table{
+    width: 100%;
+}
+.Area table td{
+    text-align: center;
+    padding: 2px;
+}
+.Area table td a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.Area table td a:hover{
+background-color: #f10215;
+color: #e3e4e5;
+
+}

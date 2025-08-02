@@ -1,0 +1,82 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+#main{
+    width: 360px;
+    height: 420px;
+    border: 10px solid #000;
+    margin:200px auto;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+}
+#stage{
+    width: 304px;
+    height: 304px;
+    border: 2px solid #000;
+    margin: 20px auto;
+    position: relative;
+}
+#info{
+    width: 304px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    font: bold 20px courier;/*改字体*/
+}
+#food{
+    width: 10px;
+    height: 10px;
+    position: absolute;/*将食物和外层进行一起定位*/
+    top: 120px;
+    left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#food{
+    width: 10px;
+    height: 10px;
+    background-image: url(./img/food.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#snake>div:not(:first-child){
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 1px;
+    background-color: #fd595c;
+}
+#snake>div:first-child{
+    width: 10px;
+    height: 10px;
+    
+    transform: scale(1.15);
+    position: absolute;
+}
+#gameover{
+    font-weight: bold;
+    font-size: 40px;
+}
+.head_imgup{
+    background-image: url(./img/up.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head_imgdown{
+    background-image: url(./img/down.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head_imgleft{
+    background-image: url(./img/left.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head_imgright{
+    background-image: url(./img/right.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

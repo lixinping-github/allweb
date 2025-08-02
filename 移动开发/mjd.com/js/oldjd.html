@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=no,minimum=1.0,maximum=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../reset.css">
+    <style>
+        * {
+            -webkit-appearance: none;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            order: 1;
+        }
+
+        html {
+            font-size: 14px;
+        }
+
+        body {
+            min-width: 320px;
+            background-color: #909490;
+            height: 3000px;
+        }
+
+        .clearfix::before,
+        .clearfix:after {
+            content: " ";
+            display: table;
+            clear: both;
+        }
+
+        .ul_ad {
+            width: 100%;
+            color: white;
+            margin-bottom: 10px;
+
+        }
+
+        .ul_ad>li {
+            text-align: center;
+            line-height: 45px;
+            height: 45px;
+            float: left;
+            background-color: #2A2C2A;
+        }
+
+        .ul_ad>li:nth-child(1) {
+            width: 8%;
+            padding-top: calc(15px / 2);
+        }
+
+        .ul_ad>li:nth-child(1)>img,
+        .ul_ad>li:nth-child(2)>img {
+            width: 30px;
+            height: 30px;
+
+        }
+
+        .ul_ad>li:nth-child(2) {
+            padding-top: calc(15px / 2);
+            width: 10%;
+        }
+
+        .ul_ad>li:nth-child(3) {
+            width: 57%;
+        }
+
+        .ul_ad>li:nth-child(4) {
+            width: 25%;
+            background-color: #F61E0A;
+        }
+
+        /* ---------------- */
+
+
+
+
+
+
+
+
+
+        .search_bar_three {
+            width: 100%;
+            height: 30px;
+            position: fixed;
+            max-width: 640px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+
+        .search_bar_three>div {
+            text-align: center;
+            line-height: 30px;
+            vertical-align: middle;
+        }
+
+        .search_bar_three>div:nth-child(1),
+        .search_bar_three>div:nth-child(3) {
+            width: 44px;
+            height: 30px;
+            position: absolute;
+            top: 0px;
+        }
+
+        .search_bar_three>div:nth-child(1) {
+            left: 0px;
+            padding-top: 5px;
+        }
+
+        .search_bar_three>div:nth-child(3) {
+            right: 0px;
+            color: #ffffff;
+        }
+
+        .search_bar {
+            height: 30px;
+            line-height: 30px;
+            margin: 0 50px;
+        }
+
+        .search_bar>input {
+            display: block;
+            width: 100%;
+            outline: none;
+            border: none;
+            height: 100%;
+            border-radius: 20px;
+            padding-left: 10px;
+        }
+
+        /* --------------------------------------- */
+        .silder {
+            width: 100%;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        .silder>img {
+            width: 100%;
+            height: 200px;
+        }
+
+        /* ---------------------- */
+
+        .allbox {
+            max-width: 640px;
+            margin: 0 auto;
+            width: 100%;
+            background-color: #608860;
+        }
+
+        .allbox>div {
+            color: #ffffff;
+            width: 20%;
+            height: 80px;
+            float: left;
+            text-align: center;
+        }
+
+        .allbox>div>img {
+            width: 50px;
+        }
+
+        .allbox>div>span {
+            display: block;
+        }
+
+        .news {
+            width: 100%;
+            max-width: 640px;
+            margin: 0 auto;
+            
+        }
+        .news>div{
+            border-radius: 3px;
+            float: left;
+            overflow: hidden;
+        }
+         .news>div>img{
+            width: 100%;
+            height: 160px;
+         }
+        .news>div:nth-child(1){
+            width: 50%;
+            
+           
+        }
+        .news>div:nth-child(2){
+            width: 25%;
+            border-left: #909490 1px solid;
+        }
+        .news>div:nth-child(3){
+            border-left: #909490 1px solid;
+            width: 25%;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="ul_ad clearfix">
+        <li><img src="../img/jingdonglogo.png" alt=""></li>
+        <li><img src="../img/jingdonglogo.png" alt=""></li>
+        <li>打开京东App,购物更轻松</li>
+        <li>立即打开</li>
+    </ul>
+
+    <!-- ----------------- -->
+    <div class="search_bar_three">
+        <div><img src="../img/threeline.png" alt=""></div>
+        <div class="search_bar">
+            <input type="text" placeholder="蔡康永新书《博学》免费送">
+        </div>
+        <div>登录</div>
+    </div>
+
+    <!-- ----------------------------------- -->
+    <main>
+        <div class="silder">
+            <img src="../img/soilder.webp" alt="">
+        </div>
+        <!-- -------------------------------------- -->
+        <div class="allbox clearfix">
+            <div class="box1">
+                <img src="../img/下载1.png" alt="">
+                <span>京东超市</span>
+            </div>
+            <div class="box2">
+                <img src="../img/下载2.png" alt="">
+                <span>全球购</span>
+            </div>
+            <div class="box3">
+                <img src="../img/下载3.png" alt="">
+                <span>京东服饰</span>
+            </div>
+            <div class="box4">
+                <img src="../img/下载4.png" alt="">
+                <span>京东生鲜</span>
+            </div>
+            <div class="box5">
+                <img src="../img/下载5.png" alt="">
+                <span>京东到家</span>
+            </div>
+            <div class="box6">
+                <img src="../img/下载6.png" alt="">
+                <span>充值缴费</span>
+            </div>
+            <div class="box7">
+                <img src="../img/下载7.png" alt="">
+                <span>9.9元拼</span>
+            </div>
+            <div class="box8">
+                <img src="../img/下载8.png" alt="">
+                <span>领劵</span>
+            </div>
+            <div class="box9">
+                <img src="../img/下载9.png" alt="">
+                <span>赚钱</span>
+            </div>
+            <div class="box10">
+                <img src="../img/下载10.png" alt="">
+                <span>全部</span>
+            </div>
+        </div>
+        <!-- ----------------------------- -->
+        <div class="news">
+            <div><img src="../img/skill1.jpg" alt=""></div>
+            <div><img src="../img/skill2.jpg" alt=""></div>
+            <div><img src="../img/skill3.jpg" alt=""></div>
+
+        </div>
+    </main>
+</body>
+
+</html>

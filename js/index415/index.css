@@ -1,0 +1,20 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.changebefore{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    position: absolute;
+}
+.changeafter{
+    width: 300px;
+    height: 300px;
+    margin: 100px auto;
+    background-color: coral;
+    text-align: center;
+    font-size: 30px;
+    color: yellowgreen;
+}

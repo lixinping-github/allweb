@@ -1,0 +1,341 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 168px;
+    max-width: 540px;
+    background-color: #F4F4F4;
+    font: normal 16px / 1.5 "PingFangSC-regular", Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+    
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    height: 50px;
+    padding: 12px 12px 6px 12px;
+    position: relative;
+}
+
+nav>input {
+    outline: none;
+    border-radius: 16px;
+    border: 1.8px solid #0086f6;
+    flex: 1;
+    padding-left: 25px;
+
+}
+nav>i{
+    position: absolute;
+    left: 20px;
+    top: 16px;
+}
+header {
+    border-radius: 10px;
+  
+    height: 184px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    font-size: 12px;
+   
+}
+
+header>div>div>img {
+    width: 28px;
+}
+.m_index_box_new_container {
+    transition: all 0.3s;
+}
+.container_left,
+.container_right {
+    border-radius: 10px;
+    column-gap: 1px;
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    flex-wrap: wrap;
+    transition: all 0.3s;
+    align-content: start;
+
+}
+.container_left>div{
+    height: calc(184px / 3);
+    
+}
+.container_left>div:nth-child(1) {
+    background-color: #FB7253;
+}
+
+.container_left>div:nth-child(2) {
+    background-color: #49A1FA;
+}
+
+.container_left>div:nth-child(3) {
+    background-color: #6291FF;
+}
+
+.container_left>div:nth-child(4) {
+    background-color: #46D2B4;
+}
+
+.container_left>div:nth-child(5) {
+    background-color: #FF9A40;
+}
+
+.container_left>div:nth-child(6),
+.container_left>div:nth-child(11) {
+    background-color: #FFF5F1;
+}
+
+.container_left>div:nth-child(7),
+.container_left>div:nth-child(12) {
+    background-color: #EFF9FF;
+}
+
+.container_left>div:nth-child(8),
+.container_left>div:nth-child(13) {
+    background-color: #F2F5FF;
+}
+
+.container_left>div:nth-child(9),
+.container_left>div:nth-child(14) {
+    background-color: #ECFCF8;
+}
+
+.container_left>div:nth-child(10),
+.container_left>div:nth-child(15) {
+    background-color: #FFF9F2;
+}
+
+.container_left>div,
+.container_right>div {
+    width: calc((100% - 4px) / 5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 58px;
+}
+
+.sub-banner {
+    padding: 0px 12px;
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    height: 148px;
+}
+
+.sub-banner>div {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 50%;
+    padding: 8px;
+    overflow: hidden;
+}
+
+.sub-banner>div:nth-child(2) {
+    margin-left: 8px;
+}
+
+.sub-banner_left>div:first-child {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.sub-banner_left>div:first-child>img {
+    width: 73px;
+    height: 20px;
+}
+
+.sub-banner_left>div:first-child>span {
+    height: 16px;
+    line-height: 16px;
+    border-radius: 2px;
+    font-size: 10px;
+    background: #ffebe3;
+    color: #ff4607;
+    padding: 1px 4px;
+    white-space: nowrap;
+}
+
+.sub-banner_left>div:nth-child(2) {
+    width: 100%;
+    height: 84px;
+    background-color: #FB7253;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 6px;
+
+}
+
+.sub-banner_left>div:nth-child(2)>img {
+    width: 100%;
+    height: 100%;
+}
+
+.sub-banner_left_spice {
+    height: 18px;
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f60;
+    padding-right: 2px;
+}
+
+.sub-banner_right_spice {
+    font-size: 11px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* ------------------------------ */
+.sub-banner_right>div:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-banner_right>div:first-child>img {
+    width: 73px;
+    height: 20px;
+}
+
+.sub-banner_right>div:first-child>span {
+    height: 16px;
+    line-height: 16px;
+    border-radius: 2px;
+    font-size: 10px;
+    background: #ffebe3;
+    color: #ff4607;
+    padding: 1px 4px;
+    white-space: nowrap;
+}
+
+.sub-banner_right>div:nth-child(2) {
+    width: 100%;
+    height: 84px;
+    margin-bottom: 6px;
+    display: flex;
+}
+
+.sub-banner_right>div:nth-child(2)>div {
+    border-radius: 10px;
+    flex: 1 1 auto;
+    overflow: hidden;
+
+}
+
+.sub-banner_right>div:nth-child(2)>div:nth-child(2) {
+    margin-left: 5px;
+}
+
+.sub-banner_right>div:nth-child(2)>div>img {
+    width: 100%;
+    height: 100%;
+}
+
+.xiechengshanglv {
+    width: 100%;
+    padding: 0px 12px;
+    margin-top: 10px;
+}
+
+.xiechengshanglv_content {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.xiechengshanglv_content>img {
+    width: 100%;
+    height: auto;
+}
+
+/* ---------------------------- */
+
+section {
+    width: 100%;
+    display: flex;
+    height: 50px;
+    margin-top: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section>div {
+    min-width: 100px;
+    height: 30px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>div {
+    text-align: center;
+    font-size: 12px;
+}
+footer>div,footer>div>a {
+    color: #666;
+}
+
+footer>div>a:first-child {
+    padding-right: 24px;
+    margin-right: 24px;
+}
+
+footer>div:nth-child(2) {
+    margin-top: 10px;
+}
+
+footer>div:nth-child(2)>span {
+    margin-left: 4px;
+}
+
+.bottom_home {
+    height: 49px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    background-color: #FFFFFF;
+}
+
+.bottom_home>div {
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.bottom_home>div>i {
+    font-size: 16px;
+}
+
+.bottom_home>div>span {
+    color: #666;
+    font-size: 11px;
+    line-height: 12px;
+}
+
+
+@media all and (max-width: 320px) {
+    .m_index_box_new_container>div>div>span {
+        font-size: 10px;
+    }
+}
