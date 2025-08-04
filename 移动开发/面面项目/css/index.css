@@ -114,31 +114,47 @@ header div span {
   justify-content: center;
   align-items: center;
 }
+.lunbo .lunbo_first div:nth-child(1) img {
+  width: 0.6133rem;
+  height: 1.1467rem;
+}
 .lunbo .lunbo_first div:nth-child(2) {
   position: relative;
   width: 14.32rem;
   height: 10.0267rem;
 }
+.lunbo .lunbo_first div:nth-child(2) .lunbo_first_img1 {
+  width: 4.8267rem;
+  height: 9.0133rem;
+}
 .lunbo .lunbo_first div:nth-child(2) .lunbo_first_img2 {
   position: absolute;
-  left: 100px;
+  left: 2.6667rem;
   z-index: 10;
+  width: 9.0133rem;
+  height: 10.0267rem;
 }
 .lunbo .lunbo_first div:nth-child(2) .lunbo_first_img3 {
   position: absolute;
-  left: 220px;
+  left: 5.8667rem;
+  width: 8.4533rem;
+  height: 8.48rem;
 }
 .lunbo .lunbo_first div:nth-child(2) .lunbo_first_img4 {
   position: absolute;
   left: 6.4533rem;
   top: 3.9467rem;
   z-index: 999;
+  height: 1.8133rem;
+  width: 1.8133rem;
 }
 .lunbo .lunbo_first div:nth-child(2) .lunbo_first_img5 {
   position: absolute;
   left: 7.1733rem;
   top: 4.5333rem;
   z-index: 999;
+  width: 0.5333rem;
+  height: 0.6933rem;
 }
 .lunbo .lunbo_first div:nth-child(3) {
   width: 2.7467rem;
@@ -147,9 +163,16 @@ header div span {
   justify-content: center;
   align-items: center;
 }
+.lunbo .lunbo_first div:nth-child(3) img {
+  width: 0.6133rem;
+  height: 1.1467rem;
+}
 .lunbo .lunbo_second {
   font-size: 0.6667rem;
   text-align: center;
+  margin-top: 0.64rem;
+  font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+  font-weight: 400;
 }
 @media screen and (max-width: 375px) {
   html {
