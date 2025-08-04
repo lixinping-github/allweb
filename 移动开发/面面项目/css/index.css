@@ -1,0 +1,163 @@
+body {
+  margin: 0 auto;
+  height: 1200px;
+  min-width: 375px;
+  max-width: 750px;
+}
+header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 6.96rem 6.96rem;
+  justify-items: center;
+}
+header div {
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+}
+header div img {
+  width: 3.7067rem;
+  height: 3.7067rem;
+}
+header div span {
+  color: #707070;
+  font-size: 0.6667rem;
+  font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+  font-weight: 400;
+  letter-spacing: 0.0168rem;
+}
+.box1 {
+  width: 19.2533rem;
+  height: 4.0533rem;
+  margin: 0 auto;
+  background-image: url("../img/圆角矩形\ 3@2x.png");
+  background-size: 19.2533rem;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.box1 .daily {
+  position: absolute;
+  left: 6.0267rem;
+  top: 0.8rem;
+}
+.box1 .daily img {
+  width: 4.5067rem;
+}
+.box1 .timeme {
+  position: absolute;
+  left: 6.0267rem;
+  top: 1.9467rem;
+}
+.box1 .timeme img {
+  width: 9.04rem;
+}
+.box1 .circle {
+  width: 3.3333rem;
+  height: 3.3333rem;
+  background-image: url("../img/椭圆\ 6@3x.png");
+  background-size: 3.3333rem;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0.3733rem;
+  right: 0.48rem;
+}
+.box1 .circle .circle_go {
+  position: absolute;
+  left: 0.6667rem;
+  top: 1.1467rem;
+}
+.box1 .circle .circle_go img {
+  width: 1.9733rem;
+  height: 1.0133rem;
+}
+.bar {
+  width: 20rem;
+  height: 0.2667rem;
+  background: #f2f4f7;
+  margin-top: 0.5733rem;
+  margin-bottom: 0.6rem;
+}
+.box2 {
+  display: flex;
+  justify-content: space-between;
+}
+.box2 .box2_is {
+  display: flex;
+  align-items: center;
+}
+.box2 .box2_is img {
+  width: 1.0133rem;
+  height: 1.0133rem;
+}
+.box2 .box2_is span {
+  margin-left: 0.48rem;
+  font-size: 0.7467rem;
+  font-weight: 700;
+  font-family: Microsoft YaHei, Microsoft YaHei-Bold;
+  color: #333333;
+}
+.box2 .box2_two {
+  font-size: 0.5867rem;
+  color: #999999;
+  font-weight: 400;
+  font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+}
+.lunbo .lunbo_first {
+  height: 10.0267rem;
+  width: 20rem;
+  display: flex;
+}
+.lunbo .lunbo_first div:nth-child(1) {
+  width: 2.9333rem;
+  height: 10.0267rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lunbo .lunbo_first div:nth-child(2) {
+  position: relative;
+  width: 14.32rem;
+  height: 10.0267rem;
+}
+.lunbo .lunbo_first div:nth-child(2) .lunbo_first_img2 {
+  position: absolute;
+  left: 100px;
+  z-index: 10;
+}
+.lunbo .lunbo_first div:nth-child(2) .lunbo_first_img3 {
+  position: absolute;
+  left: 220px;
+}
+.lunbo .lunbo_first div:nth-child(2) .lunbo_first_img4 {
+  position: absolute;
+  left: 6.4533rem;
+  top: 3.9467rem;
+  z-index: 999;
+}
+.lunbo .lunbo_first div:nth-child(2) .lunbo_first_img5 {
+  position: absolute;
+  left: 7.1733rem;
+  top: 4.5333rem;
+  z-index: 999;
+}
+.lunbo .lunbo_first div:nth-child(3) {
+  width: 2.7467rem;
+  height: 10.0267rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lunbo .lunbo_second {
+  font-size: 0.6667rem;
+  text-align: center;
+}
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 18.9px !important;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 37.5px !important;
+  }
+}
