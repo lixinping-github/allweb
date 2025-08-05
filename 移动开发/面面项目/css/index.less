@@ -1,9 +1,12 @@
 body {
 
     margin: 0 auto;
-    height: 1200px;
     min-width: 375px;
-    max-width: 750px;
+
+}
+
+html {
+    overflow-x: hidden;
 }
 
 //约束范围 
@@ -125,84 +128,146 @@ header {
     }
 }
 
+// .lunbo {
+
+//     .lunbo_first {
+//         height: 10.0267rem;
+//         width: 20rem;
+//         display: flex;
+
+//         div:nth-child(1) {
+//             width: 2.9333rem;
+//             height: 10.0267rem;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+
+//             img {
+//                 width: .6133rem;
+//                 height: 1.1467rem;
+//             }
+//         }
+
+//         div:nth-child(2) {
+//             position: relative;
+//             width: 14.32rem;
+//             height: 10.0267rem;
+
+//             .lunbo_first_img1 {
+//                 width: 4.8267rem;
+//                 height: 9.0133rem;
+//             }
+
+//             .lunbo_first_img2 {
+//                 position: absolute;
+//                 left: 2.6667rem;
+//                 z-index: 10;
+//                 width: 9.0133rem;
+//                 height: 10.0267rem;
+//             }
+
+//             .lunbo_first_img3 {
+//                 position: absolute;
+//                 left: 5.8667rem;
+//                 width: 8.4533rem;
+//                 height: 8.48rem;
+//             }
+
+//             .lunbo_first_img4 {
+//                 position: absolute;
+//                 left: 6.4533rem;
+//                 top: 3.9467rem;
+//                 z-index: 999;
+//                 height: 1.8133rem;
+//                 width: 1.8133rem;
+
+//             }
+
+//             .lunbo_first_img5 {
+//                 position: absolute;
+//                 left: 7.1733rem;
+//                 top: 4.5333rem;
+//                 z-index: 30;
+//                 width: .5333rem;
+//                 height: .6933rem;
+//             }
+//         }
+
+//         div:nth-child(3) {
+//             width: 2.7467rem;
+//             height: 10.0267rem;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+
+//             img {
+//                 width: .6133rem;
+//                 height: 1.1467rem;
+//             }
+//         }
+//     }
+
+//     .lunbo_second {
+//         font-size: .6667rem;
+//         text-align: center;
+//         margin-top: .64rem;
+//         font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+//         font-weight: 400;
+//     }
+// }
+
 .lunbo {
+    height: 12.48rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
 
-    .lunbo_first {
-        height: 10.0267rem;
-        width: 20rem;
+    .swiper-container {
+        width: 14.3467rem;
+        margin: 0 auto;
+        height: 100%;
+        overflow: hidden;
+
+    }
+
+    .swiper-slide {
+
+        text-align: center;
+        font-size: 18px;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        transition: 300ms;
+        transform: scale(0.8);
 
-        div:nth-child(1) {
-            width: 2.9333rem;
+        img {
+            width: 9.0133rem;
             height: 10.0267rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            img {
-                width: .6133rem;
-                height: 1.1467rem;
-            }
         }
 
-        div:nth-child(2) {
-            position: relative;
-            width: 14.32rem;
-            height: 10.0267rem;
-
-            .lunbo_first_img1 {
-                width: 4.8267rem;
-                height: 9.0133rem;
-            }
-
-            .lunbo_first_img2 {
-                position: absolute;
-                left: 2.6667rem;
-                z-index: 10;
-                width: 9.0133rem;
-                height: 10.0267rem;
-            }
-
-            .lunbo_first_img3 {
-                position: absolute;
-                left: 5.8667rem;
-                width: 8.4533rem;
-                height: 8.48rem;
-            }
-
-            .lunbo_first_img4 {
-                position: absolute;
-                left: 6.4533rem;
-                top: 3.9467rem;
-                z-index: 999;
-                height: 1.8133rem;
-                width: 1.8133rem;
-
-            }
-
-            .lunbo_first_img5 {
-                position: absolute;
-                left: 7.1733rem;
-                top: 4.5333rem;
-                z-index: 999;
-                width: .5333rem;
-                height: .6933rem;
-            }
-        }
-
-        div:nth-child(3) {
-            width: 2.7467rem;
-            height: 10.0267rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            img {
-                width: .6133rem;
-                height: 1.1467rem;
-            }
+        &:not([class*="swiper-slide-active"]) {
+            opacity: 0.4;
         }
     }
+
+    .swiper-slide-active,
+    .swiper-slide-duplicate-active {
+        z-index: 20;
+        transform: scale(1);
+    }
+
 
     .lunbo_second {
         font-size: .6667rem;
@@ -210,6 +275,122 @@ header {
         margin-top: .64rem;
         font-family: Microsoft YaHei, Microsoft YaHei-Regular;
         font-weight: 400;
+    }
+
+    .back1,
+    .back2 {
+        position: absolute;
+        width: .6133rem;
+        height: 1.1467rem;
+        top: 5.3333rem;
+        z-index: 10;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .back1 {
+        left: .9867rem;
+    }
+
+    .back2 {
+        right: .9867rem;
+    }
+}
+
+
+.chongdian_scroll2 {
+    height: 20.32rem;
+    margin-bottom: 1.3333rem;
+    width: 100%;
+    overflow: hidden;
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        
+
+        margin-top: 1.04rem;
+        margin-bottom: 1.3333rem;
+        box-shadow: 1px 1px 10px rgb(185, 184, 184);
+        width: 7.7333rem;
+        height: 9.0667rem;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        border-radius: .2667rem;
+        display: flex;
+        a{
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            
+            img{
+                border-radius: .2667rem;
+                margin-top: .2667rem ;
+                width: 7.2533rem;
+                height: 4.56rem;
+               align-self: center;
+            }
+            span{
+                margin-top: .5333rem;
+                font-size: .6667rem;
+                font-weight: 400;
+                text-align: left;
+                color: #333333;
+                i{
+                    color: #FF4704;
+                    font-size: .6933rem;
+                }
+            }
+        }
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+.long_scroll {
+    margin-top: 28px;
+    z-index: 999;
+    width: 20rem;
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    background-color: #fff;
+    border-top: .0533rem solid rgb(211, 211, 211);
+
+    div {
+        margin-top: .5333rem;
+        width: 25%;
+        height: 3.0133rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 1.0667rem;
+            height: 1.04rem;
+        }
+
+        span {
+            margin-top: .3733rem;
+            font-size: .5867rem;
+            font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+            font-weight: 400;
+            color: #666666;
+
+        }
     }
 }
 
@@ -220,7 +401,7 @@ header {
 }
 
 @media screen and (min-width:750px) {
-    html {
-        font-size: 37.5px !important;
-    }
+    // html {
+    //     font-size: 37.5px !important;
+    // }
 }

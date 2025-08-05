@@ -1,8 +1,9 @@
 body {
   margin: 0 auto;
-  height: 1200px;
   min-width: 375px;
-  max-width: 750px;
+}
+html {
+  overflow-x: hidden;
 }
 header {
   display: grid;
@@ -102,70 +103,49 @@ header div span {
   font-weight: 400;
   font-family: Microsoft YaHei, Microsoft YaHei-Regular;
 }
-.lunbo .lunbo_first {
-  height: 10.0267rem;
-  width: 20rem;
+.lunbo {
+  height: 12.48rem;
   display: flex;
-}
-.lunbo .lunbo_first div:nth-child(1) {
-  width: 2.9333rem;
-  height: 10.0267rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.lunbo .lunbo_first div:nth-child(1) img {
-  width: 0.6133rem;
-  height: 1.1467rem;
-}
-.lunbo .lunbo_first div:nth-child(2) {
+  flex-direction: column;
   position: relative;
-  width: 14.32rem;
-  height: 10.0267rem;
+  overflow: hidden;
 }
-.lunbo .lunbo_first div:nth-child(2) .lunbo_first_img1 {
-  width: 4.8267rem;
-  height: 9.0133rem;
+.lunbo .swiper-container {
+  width: 14.3467rem;
+  margin: 0 auto;
+  height: 100%;
+  overflow: hidden;
 }
-.lunbo .lunbo_first div:nth-child(2) .lunbo_first_img2 {
-  position: absolute;
-  left: 2.6667rem;
-  z-index: 10;
+.lunbo .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  transition: 300ms;
+  transform: scale(0.8);
+}
+.lunbo .swiper-slide img {
   width: 9.0133rem;
   height: 10.0267rem;
 }
-.lunbo .lunbo_first div:nth-child(2) .lunbo_first_img3 {
-  position: absolute;
-  left: 5.8667rem;
-  width: 8.4533rem;
-  height: 8.48rem;
+.lunbo .swiper-slide:not([class*="swiper-slide-active"]) {
+  opacity: 0.4;
 }
-.lunbo .lunbo_first div:nth-child(2) .lunbo_first_img4 {
-  position: absolute;
-  left: 6.4533rem;
-  top: 3.9467rem;
-  z-index: 999;
-  height: 1.8133rem;
-  width: 1.8133rem;
-}
-.lunbo .lunbo_first div:nth-child(2) .lunbo_first_img5 {
-  position: absolute;
-  left: 7.1733rem;
-  top: 4.5333rem;
-  z-index: 999;
-  width: 0.5333rem;
-  height: 0.6933rem;
-}
-.lunbo .lunbo_first div:nth-child(3) {
-  width: 2.7467rem;
-  height: 10.0267rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.lunbo .lunbo_first div:nth-child(3) img {
-  width: 0.6133rem;
-  height: 1.1467rem;
+.lunbo .swiper-slide-active,
+.lunbo .swiper-slide-duplicate-active {
+  z-index: 20;
+  transform: scale(1);
 }
 .lunbo .lunbo_second {
   font-size: 0.6667rem;
@@ -174,13 +154,107 @@ header div span {
   font-family: Microsoft YaHei, Microsoft YaHei-Regular;
   font-weight: 400;
 }
+.lunbo .back1,
+.lunbo .back2 {
+  position: absolute;
+  width: 0.6133rem;
+  height: 1.1467rem;
+  top: 5.3333rem;
+  z-index: 10;
+}
+.lunbo .back1 img,
+.lunbo .back2 img {
+  width: 100%;
+  height: 100%;
+}
+.lunbo .back1 {
+  left: 0.9867rem;
+}
+.lunbo .back2 {
+  right: 0.9867rem;
+}
+.chongdian_scroll2 {
+  height: 20.32rem;
+  margin-bottom: 1.3333rem;
+  width: 100%;
+  overflow: hidden;
+}
+.chongdian_scroll2 .swiper {
+  width: 100%;
+  height: 100%;
+}
+.chongdian_scroll2 .swiper-slide {
+  margin-top: 1.04rem;
+  margin-bottom: 1.3333rem;
+  box-shadow: 1px 1px 10px #b9b8b8;
+  width: 7.7333rem;
+  height: 9.0667rem;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 0.2667rem;
+  display: flex;
+}
+.chongdian_scroll2 .swiper-slide a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+.chongdian_scroll2 .swiper-slide a img {
+  border-radius: 0.2667rem;
+  margin-top: 0.2667rem;
+  width: 7.2533rem;
+  height: 4.56rem;
+  align-self: center;
+}
+.chongdian_scroll2 .swiper-slide a span {
+  margin-top: 0.5333rem;
+  font-size: 0.6667rem;
+  font-weight: 400;
+  text-align: left;
+  color: #333333;
+}
+.chongdian_scroll2 .swiper-slide a span i {
+  color: #FF4704;
+  font-size: 0.6933rem;
+}
+.chongdian_scroll2 .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.long_scroll {
+  margin-top: 28px;
+  z-index: 999;
+  width: 20rem;
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+  background-color: #fff;
+  border-top: 0.0533rem solid #d3d3d3;
+}
+.long_scroll div {
+  margin-top: 0.5333rem;
+  width: 25%;
+  height: 3.0133rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.long_scroll div img {
+  width: 1.0667rem;
+  height: 1.04rem;
+}
+.long_scroll div span {
+  margin-top: 0.3733rem;
+  font-size: 0.5867rem;
+  font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+  font-weight: 400;
+  color: #666666;
+}
 @media screen and (max-width: 375px) {
   html {
     font-size: 18.9px !important;
-  }
-}
-@media screen and (min-width: 750px) {
-  html {
-    font-size: 37.5px !important;
   }
 }
